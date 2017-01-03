@@ -1,0 +1,52 @@
+<html lang="en" data-ng-app="app">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>MEAN Stack CRUD exercise</title>
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body data-ng-controller="mainCtrl">
+        <section data-ng-show="users.length > 0">
+            <h3>Existing Users</h3>
+            <table>
+                <tr>
+                    <td>First Name</td>
+                    <td>Last Name</td>
+                    <td>Street Address</td>
+                    <td>Zip Code</td>
+                    <td>Email</td>
+                    <td>Phone Number</td>
+                    <td></td>
+                </tr>
+                <tr data-ng-repeat="user in users">
+                    <td>{{user.first}}</td>
+                    <td>{{user.last}}</td>
+                    <td>{{user.address}}</td>
+                    <td>{{user.zip}}</td>
+                    <td>{{user.email}}</td>
+                    <td>{{user.phone}}</td>
+                    <td>
+                        <button data-ng-click="delete(user._id);">Delete</button>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="new-user">
+            <h3>Create User</h3>
+
+            <!-- Navigate to '/quotes' express post request -->
+            <form data-ng-submit="handleSubmit();">
+                <input type="text" placeholder="First Name"               data-ng-model="first" />
+                <input type="text" placeholder="Last Name"                data-ng-model="last"  />
+                <input type="text" placeholder="Address"                  data-ng-model="address"   />
+                <input type="text" placeholder="Zip"                      data-ng-model="zip"       />
+                <input type="text" placeholder="Email (ie. john@doe.com)" data-ng-model="email"     />
+                <input type="text" placeholder="Phone (ie. 925-555-1212)" data-ng-model="phone"     />
+                <button type="submit">Submit</button>
+            </form>
+            <div class="green-color" data-ng-show="success">User created successfully</div>
+        </section>
+        <script type="text/javascript" src="assets/libs/angular.min.js"></script>
+        <script type="text/javascript" src="app/app.js"></script>
+    </body>
+</html>

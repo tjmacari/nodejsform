@@ -1,0 +1,36 @@
+{
+  "name": "nodejsform",
+  "version": "1.0.0",
+  "description": "MEAN Stack CRUD exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjmacari/nodejsform.git"
+  },
+  "keywords": [
+    "mean",
+    "mongodb",
+    "express",
+    "angularjs",
+    "nodejs"
+  ],
+  "author": "Thomas Macari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tjmacari/nodejsform/issues"
+  },
+  "homepage": "https://github.com/tjmacari/nodejsform#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.16",
+    "mongoose": "^4.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
