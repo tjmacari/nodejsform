@@ -1,5 +1,7 @@
 Using MEAN Stack - MongoDB, Express, AngularJS, and NodeJS - Create, retrieve, and delete against a NoSQL Database.
 
+Simple table to display users read from the MongoDB database, and an AngularJS form to create new users.
+
 Installation:
 (1) Clone Repo
 (2) Install MongoDB and create global path (ie. add path to .bash_profile on linux, etc.)
