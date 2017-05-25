@@ -5,6 +5,9 @@ Simple table to display users read from the MongoDB database, and an AngularJS f
 Installation:
 (1) Clone Repo
 (2) Install MongoDB and create global path (ie. add path to .bash_profile on linux, etc.)
+
+MongoDB Installation: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/#install-mongodb-community-edition
+
 (3) Run 'npm install'
 
 Usage:
