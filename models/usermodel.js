@@ -1,5 +1,5 @@
 const mongoose = require('mongoose'); // Object modeling package which is best NodeJS schema module
-var Schema =mongoose.Schema;
+var Schema = mongoose.Schema;
 
 // Define schema
 var userSchema = new Schema({
